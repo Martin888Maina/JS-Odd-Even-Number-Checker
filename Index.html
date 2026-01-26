@@ -3,31 +3,58 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<style>
-    body{
-        text-align: center;
-        font-family: Arial, Helvetica, sans-serif;
-    }
-</style>
-<body>
-
-    <h1>PROGRAM TO CHECK IF A NUMBER IS ODD OR EVEN</h1>
-
-
-    <script>
-        let number =parseInt(prompt("Please insert a Number: "));
-        let result = number % 2;
-        if(result == 1){
-        console.log("The Number is an Odd Number");
-        }else if(result == 0){
-        console.log("The Number is an Even Number");
-        }else{
-        console.log("Invalid Input")
-        }
-
-    </script>
     
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="A modern, interactive web application to check if a number is odd or even. Built with vanilla JavaScript, HTML, and CSS.">
+    <meta name="keywords" content="odd even checker, number checker, javascript calculator, web app">
+    <meta name="author" content="Martin888Maina">
+    
+    <!-- Open Graph Meta Tags for social sharing -->
+    <meta property="og:title" content="Odd or Even Number Checker">
+    <meta property="og:description" content="Interactive tool to determine if a number is odd or even">
+    <meta property="og:type" content="website">
+    
+    <title>Odd or Even Number Checker | Interactive Web Tool</title>
+    
+    <!-- External Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Main container with glassmorphism effect -->
+    <div class="container">
+        <!-- Header section -->
+        <header>
+            <h1>Odd or Even Checker</h1>
+            <p class="subtitle">Discover if your number is odd or even</p>
+        </header>
+
+        <!-- Input section -->
+        <div class="input-section">
+            <label for="numberInput">Enter a Number:</label>
+            <div class="input-wrapper">
+                <input 
+                    type="number" 
+                    id="numberInput" 
+                    placeholder="Type any number..."
+                    autocomplete="off"
+                    aria-label="Number input"
+                >
+            </div>
+            <p id="errorMessage" class="error-message" role="alert"></p>
+        </div>
+
+        <!-- Action button -->
+        <button id="checkButton" type="button">
+            Check Number
+        </button>
+
+        <!-- Result display area -->
+        <div class="result-container">
+            <div id="result" class="result" role="status" aria-live="polite"></div>
+        </div>
+    </div>
+
+    <!-- External JavaScript file -->
+    <script src="script.js"></script>
 </body>
 </html>
