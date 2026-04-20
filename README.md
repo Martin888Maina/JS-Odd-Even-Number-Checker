@@ -27,7 +27,7 @@ This application provides an intuitive way for users to check if any integer is 
 
 ```
 JS-Odd-Even-Number-Checker/
-├── Index.html          # Main HTML structure
+├── index.html          # Main HTML structure
 ├── style.css           # Stylesheet with design system
 ├── script.js           # Application logic and functionality
 ├── LICENSE             # MIT License
@@ -57,7 +57,7 @@ The logic includes comprehensive input validation to handle edge cases such as e
    cd JS-Odd-Even-Number-Checker
    ```
 
-3. Open `Index.html` in your preferred web browser:
+3. Open `index.html` in your preferred web browser:
    - Double-click the file, or
    - Use a local server for best results
 
