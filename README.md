@@ -2,6 +2,8 @@
 
 A modern, interactive web application that determines whether a given number is odd or even. Built with vanilla JavaScript, HTML5, and CSS3, this project demonstrates clean code practices, responsive design, and user-friendly interface design.
 
+**Live Demo:** [odd-even-checker.martinmaina.dev](https://odd-even-checker.martinmaina.dev/)
+
 ## Overview
 
 This application provides an intuitive way for users to check if any integer is odd or even. Rather than using basic browser alerts, the interface features a glassmorphism design with smooth animations, real-time input validation, and visual feedback that creates an engaging user experience.
