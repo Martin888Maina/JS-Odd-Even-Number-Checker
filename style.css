@@ -214,6 +214,19 @@ button:disabled {
     transform: none;
 }
 
+button.btn-reset {
+    background: transparent;
+    color: var(--primary-terracotta);
+    border: 2px solid var(--primary-terracotta);
+    box-shadow: none;
+    margin-top: 12px;
+}
+
+button.btn-reset:hover {
+    background: rgba(212, 116, 74, 0.08);
+    box-shadow: var(--shadow-soft);
+}
+
 /* Result Display */
 .result-container {
     margin-top: 30px;

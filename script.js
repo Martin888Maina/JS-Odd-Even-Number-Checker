@@ -109,3 +109,11 @@ numberInput.addEventListener('input', () => {
 window.addEventListener('load', () => {
     numberInput.focus();
 });
+
+// Reset button clears input and result
+const resetButton = document.getElementById('resetButton');
+resetButton.addEventListener('click', () => {
+    numberInput.value = '';
+    resetDisplay();
+    numberInput.focus();
+});
