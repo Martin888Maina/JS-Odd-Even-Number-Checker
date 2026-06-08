@@ -3,22 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <!-- SEO Meta Tags -->
+
     <meta name="description" content="A modern, interactive web application to check if a number is odd or even. Built with vanilla JavaScript, HTML, and CSS.">
     <meta name="keywords" content="odd even checker, number checker, javascript calculator, web app">
     <meta name="author" content="Martin888Maina">
-    
+
     <!-- Open Graph Meta Tags for social sharing -->
     <meta property="og:title" content="Odd or Even Number Checker">
     <meta property="og:description" content="Interactive tool to determine if a number is odd or even">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://odd-even-checker.martinmaina.dev/">
 
-    <!-- Canonical URL -->
     <link rel="canonical" href="https://odd-even-checker.martinmaina.dev/">
 
-    <!-- Favicons -->
     <link rel="icon" type="image/x-icon" href="favicon/favicon.ico">
     <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
     <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
@@ -27,25 +24,21 @@
 
     <title>Odd or Even Number Checker | Interactive Web Tool</title>
 
-    <!-- External Stylesheet -->
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Main container with glassmorphism effect -->
     <div class="container">
-        <!-- Header section -->
         <header>
             <h1>Odd or Even Checker</h1>
             <p class="subtitle">Discover if your number is odd or even</p>
         </header>
 
-        <!-- Input section -->
         <div class="input-section">
             <label for="numberInput">Enter a Number:</label>
             <div class="input-wrapper">
-                <input 
-                    type="number" 
-                    id="numberInput" 
+                <input
+                    type="number"
+                    id="numberInput"
                     placeholder="Type any number..."
                     autocomplete="off"
                     aria-label="Number input"
@@ -54,7 +47,6 @@
             <p id="errorMessage" class="error-message" role="alert"></p>
         </div>
 
-        <!-- Action buttons -->
         <button id="checkButton" type="button">
             Check Number
         </button>
@@ -62,13 +54,11 @@
             Reset
         </button>
 
-        <!-- Result display area -->
         <div class="result-container">
             <div id="result" class="result" role="status" aria-live="polite"></div>
         </div>
     </div>
 
-    <!-- External JavaScript file -->
     <script src="script.js"></script>
 </body>
 </html>

@@ -1,12 +1,5 @@
-/* 
-   Modern Design System
-   Unique warm terracotta and sage color palette for a sophisticated, earthy aesthetic
-*/
-
-/* Import premium Google Font */
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap');
 
-/* Root Variables - Custom Color Palette */
 :root {
     /* Unique warm terracotta and sage palette - avoiding generic blues/purples */
     --primary-terracotta: #d4744a;
@@ -17,19 +10,16 @@
     --warm-sand: #e3d5c1;
     --soft-olive: #a3b18a;
     --deep-rust: #b55945;
-    
-    /* Gradients */
+
     --gradient-warm: linear-gradient(135deg, var(--primary-terracotta) 0%, var(--deep-rust) 100%);
     --gradient-earth: linear-gradient(135deg, var(--soft-olive) 0%, var(--secondary-sage) 100%);
-    
-    /* Shadows and Effects */
+
     --shadow-soft: 0 8px 32px rgba(180, 89, 69, 0.15);
     --shadow-medium: 0 12px 48px rgba(180, 89, 69, 0.2);
     --glow-terracotta: 0 0 20px rgba(212, 116, 74, 0.3);
     --glow-sage: 0 0 20px rgba(138, 154, 123, 0.3);
 }
 
-/* Global Reset and Base Styles */
 * {
     margin: 0;
     padding: 0;
@@ -74,7 +64,6 @@ body {
     }
 }
 
-/* Header Styling */
 h1 {
     color: var(--dark-charcoal);
     font-size: 2rem;
@@ -93,7 +82,6 @@ h1 {
     font-weight: 400;
 }
 
-/* Input Section */
 .input-section {
     margin-top: 28px;
     margin-bottom: 30px;
@@ -142,7 +130,6 @@ input[type="number"].error {
     75% { transform: translateX(10px); }
 }
 
-/* Button Styling */
 button {
     width: 100%;
     padding: 16px;
@@ -187,7 +174,6 @@ button.btn-reset:hover {
     box-shadow: var(--shadow-soft);
 }
 
-/* Result Display */
 .result-container {
     margin-top: 30px;
     min-height: 120px;
@@ -249,7 +235,6 @@ button.btn-reset:hover {
     opacity: 0.9;
 }
 
-/* Error Message */
 .error-message {
     color: var(--deep-rust);
     font-size: 0.85rem;
@@ -262,30 +247,29 @@ button.btn-reset:hover {
     opacity: 1;
 }
 
-/* Responsive Design */
 @media (max-width: 600px) {
     .container {
         padding: 40px 30px;
     }
-    
+
     h1 {
         font-size: 1.6rem;
     }
-    
+
     .subtitle {
         font-size: 0.85rem;
     }
-    
+
     input[type="number"] {
         font-size: 1rem;
         padding: 14px 18px;
     }
-    
+
     button {
         font-size: 1rem;
         padding: 14px;
     }
-    
+
     .result-number {
         font-size: 2rem;
     }
@@ -295,7 +279,7 @@ button.btn-reset:hover {
     .container {
         padding: 30px 20px;
     }
-    
+
     h1 {
         font-size: 1.4rem;
     }
